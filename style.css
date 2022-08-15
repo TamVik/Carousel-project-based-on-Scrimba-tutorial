@@ -1,0 +1,74 @@
+body {
+    font-family: 'DynaPuff', cursive;
+    background: #343a40;
+    color: #fffcf7;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.accent-color {
+    color: #e5989b;
+}
+
+.carousel {
+    width: 100%;
+    position: relative;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 2.5s;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 60%;
+    height: auto;
+}
+
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+    font-family: 'DynaPuff', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
